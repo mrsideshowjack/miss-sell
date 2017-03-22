@@ -7,12 +7,12 @@ permalink:        pretty
 
 # Setup
 title:            sideshowjack.uk
-tagline:          'blog'
+tagline:          'miss-sell'
 description:      'My blog about stuff'
-url:              http://sideshowjack.uk/blog
-baseurl:          '/blog'
-production_url :  http://mrsideshowjack.github.io.com/blog
-BASE_PATH :       http://sideshowjack.uk/blog
+url:              http://sideshowjack.uk/miss-sell
+baseurl:          '/miss-sell'
+production_url :  http://mrsideshowjack.github.io.com/miss-sell
+BASE_PATH :       http://sideshowjack.uk/miss-sell
 
 author:
   name:           'Jack Mason'
