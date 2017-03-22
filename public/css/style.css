@@ -508,7 +508,7 @@ a.pagination-item:hover {
  * Contents
  *
  * Global resets
- * Sidebar
+ * splash
  * Container
  * Reverse layout
  * Themes
@@ -537,21 +537,21 @@ html {
 
 
 /*
- * Sidebar
+ * splash
  *
  * Flexible banner for housing site name, intro, and "footer" content. Starts
  * out above content in mobile and later moves to the side with wider viewports.
  */
 
-.sidebar {
+.splash {
   text-align: center;
   padding: 2rem 1rem;
   color: #212121;
   background-color: #1EA6B3;
-  position: relative;
+  /*position: relative;*/
   overflow: hidden;
 }
-.sidebar:after{
+.splash:after{
     content: "";
     display: block;
     position: absolute;
@@ -561,81 +561,83 @@ html {
     z-index: -1;
 }
 @media (min-width: 48em) {
-  .sidebar {
-    position: fixed;
+  .splash {
+/*    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     width: 18rem;
-    text-align: left;
+    text-align: left;*/
+    width: 100vw;
+    height: 80vh;
   }
 }
 
-/* Sidebar links */
-.sidebar a {
+/* splash links */
+.splash a {
   color: #212121;
 }
 
 /* About section */
-.sidebar-about h1 {
+.splash-about h1 {
   color: #212121;
   margin-top: 0;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 3.8rem;
 }
-.sidebar .social{
+.splash .social{
   text-align: center;
 }
-.sidebar .social a {
+.splash .social a {
     padding: 0.2em;
     line-height: 2em;
     font-size: 1.5em;
 }
 
-.sidebar .social a:focus,
-.sidebar .social a:hover,
-a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus, 
-.sidebar-about h1 a:hover{
+.splash .social a:focus,
+.splash .social a:hover,
+a.splash-nav-item:hover,
+a.splash-nav-item:focus, 
+.splash-about h1 a:hover{
   text-decoration: none;
   color: rgba(0,0,0,0.7);
 }
 
-/* Sidebar nav */
-.sidebar-nav {
+/* splash nav */
+.splash-nav {
   margin-bottom: 1rem;
 }
-.sidebar-nav-item {
+.splash-nav-item {
   display: block;
   line-height: 1.75;
 }
-.sidebar-nav-item .fa{
+.splash-nav-item .fa{
   transition: 200ms;
 }
 
-.sidebar-nav-item.active {
+.splash-nav-item.active {
   font-weight: bold;
 }
 
-a.sidebar-nav-item:hover .fa,
-a.sidebar-nav-item:focus .fa,
-.sidebar-nav-item.active .fa{
+a.splash-nav-item:hover .fa,
+a.splash-nav-item:focus .fa,
+.splash-nav-item.active .fa{
   opacity: 1;
 }
 
-.sidebar .copyright{
+.splash .copyright{
     font-size: 0.7rem;
     margin: 0px;
 }
 
-/* Sticky sidebar
+/* Sticky splash
  *
- * Add the `sidebar-sticky` class to the sidebar's container to affix it the
- * contents to the bottom of the sidebar in tablets and up.
+ * Add the `splash-sticky` class to the splash's container to affix it the
+ * contents to the bottom of the splash in tablets and up.
  */
 
 @media (min-width: 48em) {
-  .sidebar-sticky {
+  .splash-sticky {
     position: absolute;
     right:  1rem;
     bottom: 1rem;
@@ -647,7 +649,7 @@ a.sidebar-nav-item:focus .fa,
 /* Container
  *
  * Align the contents of the site above the proper threshold with some margin-fu
- * with a 25%-wide `.sidebar`.
+ * with a 25%-wide `.splash`.
  */
 
 .content {
