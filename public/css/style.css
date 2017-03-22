@@ -554,18 +554,19 @@ html {
   overflow: hidden;
 }
 .splash-img-container{
-  max-width: 100%;
-  max-height: 800px;
+ width: 97%;
+ height: 800px;
+  background-color: #212121;
   background-image: url("../annie-spratt-66432.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 50% 100%;
   border-radius: 1.4rem;
+  margin:  1rem auto;
 }
 .splash-img{
 /*  max-width: 100%;
   max-height: 100%;*/
-  padding: 1rem;
 }
 /*.splash:after{
     content: "";
