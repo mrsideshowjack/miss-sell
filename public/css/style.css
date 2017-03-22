@@ -557,7 +557,7 @@ html {
   width: 100%;
   height: 100%;
 }
-.splash:after{
+/*.splash:after{
     content: "";
     display: block;
     position: absolute;
@@ -565,7 +565,7 @@ html {
     background: rgba(255,255,255,0.1);
     transform: rotate(30deg);
     z-index: -1;
-}
+}*/
 @media (min-width: 48em) {
   .splash {
 /*    position: fixed;
@@ -640,14 +640,14 @@ a.splash-nav-item:focus .fa,
  * contents to the bottom of the splash in tablets and up.
  */
 
-@media (min-width: 48em) {
+/*@media (min-width: 48em) {
   .splash-sticky {
     position: absolute;
     right:  1rem;
     bottom: 1rem;
     left:   1rem;
   }
-}
+}*/
 
 
 /* Container
