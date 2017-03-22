@@ -68,7 +68,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #1EA6B3;
+  color: #C12127;
   text-decoration: none;
 }
 a strong {
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 2rem;
-  color: #1EA6B3;
+  color: #C12127;
 }
 h2 {
   margin-top: 1rem;
@@ -293,11 +293,11 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  max-width: 38rem;
+/*  max-width: 38rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
-  margin-right: auto;
+  margin-right: auto;*/
 }
 
 
@@ -344,7 +344,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #1EA6B3;
+  color: #C12127;
 }
 .page-title,
 .post-title {
@@ -416,7 +416,7 @@ tbody tr:nth-child(odd) th {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #1EA6B3;
+  color: #C12127;
   text-decoration: none;
 }
 .related-posts li a:hover small {
@@ -547,9 +547,9 @@ html {
   width: 100vw;
   height: 80vh;
   text-align: center;
-  padding: 0rem 1rem;
+  padding: 0rem;
   color: #212121;
-  background-color: #FF1C38;
+  background-color: #C12127;
   /*position: relative;*/
   overflow: hidden;
 }
@@ -612,7 +612,8 @@ a.splash-nav-item:focus,
   margin-bottom: 1rem;
 }
 .splash-nav-item {
-  display: block;
+  display: inline-block;
+  min-width: 100px;
   line-height: 1.75;
 }
 .splash-nav-item .fa{
@@ -659,9 +660,11 @@ a.splash-nav-item:focus .fa,
 .content {
   padding-top:    4rem;
   padding-bottom: 4rem;
+  max-width: 50%;
+  margin: 1rem auto;
 }
 
-@media (min-width: 48em) {
+/*@media (min-width: 48em) {
   .content {
     max-width: 38rem;
     margin-left: 20rem;
@@ -675,7 +678,7 @@ a.splash-nav-item:focus .fa,
     margin-right: 4rem;
   }
 }
-
+*/
 
 .archive h3 {
     border-top: 2px dotted #ddd;
