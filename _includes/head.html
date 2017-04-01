@@ -38,7 +38,7 @@
   var totalCount = 5;
   function ChangeIt(){
   var num = Math.ceil( Math.random() * totalCount );
-  document.querySelector('.splash-img-container').background = '{{ site.baseurl }}/public/bgimages/'+num+'.jpg';
+  document.querySelector('.splash-img-container').style.backgroundImage = 'url("{{ site.baseurl }}/public/bgimages/'+num+'.jpg")';
   // document.body.style.backgroundRepeat = "repeat";// Background repeat
   }
   </script>
