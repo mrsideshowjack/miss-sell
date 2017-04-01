@@ -33,4 +33,14 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <script type="text/javascript"> 
+  var totalCount = 5;
+  function ChangeIt(){
+  var num = Math.ceil( Math.random() * totalCount );
+  document.querySelector('.splash-img-container').background = '{{ site.baseurl }}/public/bgimages/'+num+'.jpg';
+  // document.body.style.backgroundRepeat = "repeat";// Background repeat
+  }
+  </script>
+
 </head>
