@@ -550,24 +550,22 @@ html {
   padding: 0rem;
   color: #fff;
   background-color: #2A333C;
-  background-image: linear-gradient(to top, #dbdcd7 0%,
-                                   #dddcd7 24%, #e2c9cc 30%, 
-                                   #e7627d 46%, #b8235a 59%, 
-                                   #801357 71%, #3d1635 84%, 
-                                   #1c1a27 100%);
+  background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
   /*position: relative;*/
   overflow: hidden;
+  box-shadow: 0 3px 11px 0px rgba(0, 0, 0, 0.65);
 }
 .splash-img-container{
- width: 97%;
- height: 800px;
-  background-color: #212121;
-  background-image: url("../aleksi-tappura-669.jpg");
+    width: 95%;
+    height: 340px;
+    background-color: #212121;
+    background-image: url(../aleksi-tappura-669.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 100%;
-  border-radius: 1.4rem;
-  margin:  1rem auto;
+    background-position: center bottom;
+    border-radius: 1.4rem;
+    margin: 1rem auto;
+    border: 7px double white;
 }
 .splash-img{
 /*  max-width: 100%;
@@ -598,6 +596,7 @@ html {
   color: #fff;
 }
 
+
 /* About section */
 .splash-about h1 {
   color: #fff;
@@ -627,7 +626,38 @@ a.splash-nav-item:focus,
 .splash-nav {
   margin-bottom: 1rem;
 }
-.splash-nav-item {
+
+.splash-nav a {
+  position:relative;
+  z-index: 1;
+}
+.splash-nav a:hover {
+  color: #91640F;
+}
+.splash-nav a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #F1C40F;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.splash-nav a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+/*.splash-nav-item {
   display: inline-block;
   min-width: 100px;
   line-height: 1.75;
@@ -644,7 +674,7 @@ a.splash-nav-item:hover .fa,
 a.splash-nav-item:focus .fa,
 .splash-nav-item.active .fa{
   opacity: 1;
-}
+}*/
 
 .splash .copyright{
     font-size: 0.7rem;
