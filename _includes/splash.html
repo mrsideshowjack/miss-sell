@@ -13,10 +13,36 @@
 
     </div>
 
-    <nav class="splash-nav">
+  <nav class="splash-nav">
+    <ul>
+      <li>
+        <a class="{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}">
+        Blog
+      </a>
+
+    {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+      <li>
+        <a class="{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">
+        {{ node.title }}
+      </a>
+          {% endif %}
+      {% endif %}
+    {% endfor %}
+
+      <li>
+        <a class="{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/archive">
+        Archive
+      </a>
+    </ul>
+  </nav>
+
+
+<!--     <nav class="splash-nav">
 
       <a class="splash-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}">
-        <!-- <i class="fa fa-fw fa-rss-square hidden" aria-hidden="true"></i> -->
         Blog
       </a>
 
@@ -25,17 +51,15 @@
         {% if node.title != null %}
           {% if node.layout == "page" %}
             <a class="splash-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">
-              <!-- <i class="fa fa-fw fa-file-text-o hidden" aria-hidden="true"></i> -->
               {{ node.title }}
             </a>
           {% endif %}
         {% endif %}
       {% endfor %}
       <a class="splash-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/archive">
-        <!-- <i class="fa fa-fw fa-archive hidden" aria-hidden="true"></i> -->
         Achive
       </a>
-    </nav>
+    </nav> -->
     
 <!--       <div class="social">
           <a href="https://twitter.com/mrsideshowjack"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
