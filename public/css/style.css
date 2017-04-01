@@ -550,6 +550,11 @@ html {
   padding: 0rem;
   color: #fff;
   background-color: #2A333C;
+  background-image: linear-gradient(to top, #dbdcd7 0%,
+                                   #dddcd7 24%, #e2c9cc 30%, 
+                                   #e7627d 46%, #b8235a 59%, 
+                                   #801357 71%, #3d1635 84%, 
+                                   #1c1a27 100%);
   /*position: relative;*/
   overflow: hidden;
 }
@@ -557,7 +562,7 @@ html {
  width: 97%;
  height: 800px;
   background-color: #212121;
-  background-image: url("../annie-spratt-66432.jpg");
+  background-image: url("../aleksi-tappura-669.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 100%;
@@ -615,7 +620,7 @@ a.splash-nav-item:hover,
 a.splash-nav-item:focus, 
 .splash-about h1 a:hover{
   text-decoration: none;
-  color: rgba(0,0,0,0.7);
+  color: #E2001A;
 }
 
 /* splash nav */

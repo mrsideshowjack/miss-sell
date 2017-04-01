@@ -4,7 +4,7 @@
       <h1>
         <a href="{{ site.baseurl }}">
           miss-sell
-          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          <!-- <i class="fa fa-graduation-cap" aria-hidden="true"></i> -->
         </a>
       </h1>
 
@@ -16,7 +16,7 @@
     <nav class="splash-nav">
 
       <a class="splash-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}">
-        <i class="fa fa-fw fa-rss-square hidden" aria-hidden="true"></i>
+        <!-- <i class="fa fa-fw fa-rss-square hidden" aria-hidden="true"></i> -->
         Blog
       </a>
 
@@ -25,14 +25,14 @@
         {% if node.title != null %}
           {% if node.layout == "page" %}
             <a class="splash-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">
-              <i class="fa fa-fw fa-file-text-o hidden" aria-hidden="true"></i>
+              <!-- <i class="fa fa-fw fa-file-text-o hidden" aria-hidden="true"></i> -->
               {{ node.title }}
             </a>
           {% endif %}
         {% endif %}
       {% endfor %}
       <a class="splash-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}/archive">
-        <i class="fa fa-fw fa-archive hidden" aria-hidden="true"></i>
+        <!-- <i class="fa fa-fw fa-archive hidden" aria-hidden="true"></i> -->
         Achive
       </a>
     </nav>
