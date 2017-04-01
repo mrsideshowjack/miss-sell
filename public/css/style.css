@@ -48,7 +48,7 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -435,7 +435,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #ccc;
   text-align: center;
 }
@@ -557,12 +557,12 @@ html {
 }
 .splash-img-container{
     width: 95%;
-    height: 340px;
-    background-color: transparent;
+    height: 350px;
     background-image: url(../aleksi-tappura-669.jpg);
-    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-size: cover;
     border-radius: 1.4rem;
     margin: 1rem auto;
 }
@@ -600,7 +600,7 @@ html {
 .splash-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Pacifico', cursive;
   font-size: 3.8rem;
 }
 .splash .social{
@@ -666,7 +666,7 @@ nav.splash-nav ul li a:after {
   height: 1px;
   content: '.';
   color: transparent;
-  background: #E2001A;
+  background: rgba(226, 0, 26, 0.7);
   visibility: none;
   opacity: 0;
   z-index: -1;
