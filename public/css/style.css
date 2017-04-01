@@ -625,7 +625,6 @@ a.splash-nav-item:focus,
 nav.splash-nav {
   width: 80%;
   margin: 0 auto;
-  padding: 0.1em 0px;
   border-bottom: 1px solid #E2001A;
 }
 nav.splash-nav ul {
@@ -645,8 +644,8 @@ nav.splash-nav ul li a {
   position:relative;
   z-index: 1;
   display: block;
-  padding: 15px;
-  margin: 0px 4px;
+  padding: 10px;
+  margin: 0px 1em;
   text-decoration: none;
   color: #aaa;
   font-weight: 800;
