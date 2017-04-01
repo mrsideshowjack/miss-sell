@@ -558,7 +558,7 @@ html {
 .splash-img-container{
     width: 95%;
     height: 350px;
-    background-image: url(../bgimages/1.jpg);
+    /*background-image: url(../bgimages/1.jpg);*/
     background-attachment: fixed;
     background-position: center bottom;
     background-repeat: no-repeat;
