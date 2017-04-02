@@ -552,7 +552,6 @@ html {
   /*position: relative;*/
   overflow: hidden;
   box-shadow: 0 3px 11px 0px rgba(0, 0, 0, 0.65);
-
   background-attachment: fixed;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -562,19 +561,22 @@ html {
 .splash-sticky{
   background-color: #29323c;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  border-radius: 1.4rem;
-}
+    border-radius: 0px 0px 1.4rem 1.4rem;
+    height: 37%;
+    max-width: 95%;
+    margin: 0px auto;
+    padding: 1rem;}
 
-@media (min-width: 48em) {
+/*@media (min-width: 48em) {
   .splash {
-/*    position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     width: 18rem;
-    text-align: left;*/
+    text-align: left;
   }
-}
+}*/
 
 /* splash links */
 .splash a {
