@@ -549,36 +549,22 @@ html {
   text-align: center;
   padding: 0rem;
   color: #fff;
-  background-color: #29323c;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   /*position: relative;*/
   overflow: hidden;
   box-shadow: 0 3px 11px 0px rgba(0, 0, 0, 0.65);
+
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1rem auto;
 }
-.splash-img-container{
-    width: 95%;
-    height: 350px;
-    /*background-image: url(../bgimages/1.jpg);*/
-    background-attachment: fixed;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 1.4rem;
-    margin: 1rem auto;
+.splash-sticky{
+  background-color: #29323c;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  border-radius: 1.4rem;
 }
-.splash-img{
-/*  max-width: 100%;
-  max-height: 100%;*/
-}
-/*.splash:after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: -40px; right: -40px; bottom: -40px; left: -40px;
-    background: rgba(255,255,255,0.1);
-    transform: rotate(30deg);
-    z-index: -1;
-}*/
+
 @media (min-width: 48em) {
   .splash {
 /*    position: fixed;
